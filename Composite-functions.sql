@@ -38,14 +38,21 @@ POWER(esalary,2) As Power_value,
 from employee
 
 
-
+-- it checks the value of salary which is equal to 28000
 select * from employee where esalary = 28000
+-- it checks the value of salary which is not equal to 30000
 select * from employee where esalary != 30000
+-- it checks the value of salary which is greater than 34000
 select * from employee where esalary > 34000
+-- it checks the value of salary which is less than 34000
 select * from employee where esalary < 34000
+-- it checks the value of salary which is greater than equal to 28000
 select * from employee where esalary >= 28000
+-- it checks the value of salary which is less than equal to 30000
 select * from employee where esalary <= 30000
+-- it checks the value of salary which is between 30000 and 20000
 select * from employee where esalary between 30000 And 20000
+-- it checks the value of salaries which are 28000, 30000, 34000
 select * from employee where esalary in(28000, 30000, 34000)
 /* It search for the d where it is included in a name*/
 select * from employee where ename like '%d%'
